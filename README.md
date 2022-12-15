@@ -11,7 +11,6 @@
 - [ ] What is React?
 - [ ] Basic React Tutorial
   - [ ] Learning Outcomes
-  - [ ] Tip
 - [ ] Advanced React Tutorial
 - [ ] What is TypeScript?
 - [ ] React TypeScript Tutorial
@@ -20,7 +19,10 @@
 ## **Resources**
 
 - [React Docs](https://reactjs.org/docs/getting-started.html)
-- [Awesome React](https://github.com/enaqx/awesome-react)
+  Official Documentation
+- [Awesome React](https://github.com/enaqx/awesome-react) 
+  A collection of awesome things regarding the React ecosystem.
+
   
 ## **Setup**
 
@@ -30,13 +32,17 @@
 
 React is a library created by Meta (previously Facebook) and has gained popularity as one of the big three popular web frameworks (the others being Angular and Vue). It follows a declarative, component-based approach and doesn't make assumptions about the rest of your technology stack, furthering a learn once, write anywhere learning mindset.
 
+In recent years, the industry has pivoted from the older and more traditional class-based components to the newer functional-based components with hooks. This newer way of writing components is easier to read, test and implement best practices, because they are simply plain Javascript functions calling other functions.
+
+[Why functional React](https://blog.logrocket.com/fundamentals-functional-programming-react/)
+
 ## **Why should I learn about it?**
 
 One of its most significant advantages is that it is relatively tech agnostic and allows teams to compose their applications with technology choices that make sense for the application they are building.
 
 ## **Fragments**
 
-One of the most useful features introduced by React 16 is Fragments because React components are required to have only one root element. React 16 introduced the React.Fragment wrapper allows child component wrapping, meaning that an element can have multiple child elements at its root, with one parent element, the Fragment, which does not get rendered to the DOM. React.Fragments help alleviate the DOM nesting that React < 16 was prone to due to having to wrap the contents of an element with multiple root elements in something else, like a div.
+One of the most useful features introduced by React 16 is Fragments because React components are required to have only one root element. React 16 introduced the React. Fragment wrapper allows child component wrapping, meaning that an element can have multiple child elements at its root, with one parent element, the Fragment, which does not get rendered to the DOM. React. Fragments help alleviate the DOM nesting that React < 16 was prone to due to having to wrap the contents of an element with multiple root elements in something else, like a div.
 
 # **Basic React Tutorial**
 
@@ -50,39 +56,44 @@ After going through the practical, you should be familiar with the following con
 - [ ] JSX
 - [ ] React application State and Lifecycle
 - [ ] Handling events
-- [ ] React classes
+- [ ] React functional components
 - [ ] Hoisting State
-- [ ] NPM / YARN
+- [ ] NPM
 
 ## **Intro to React**
 
-- [ ] [Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html)
+- [ ] [Tutorial: Intro to React](https://beta.reactjs.org/learn)
 
-<details>
-<summary>Tip</summary>
+# **Advanced React Tutorial**
 
-- As a React developer, you should endeavour to modify your DOM only by modifying the state or properties of your components.
+Just for extra informational purposes.
 
-- Whenever a state change is made, React will diff its Virtual-DOM against the real DOM and fire off update requests to components affected by the state changes.
+- [ ] [Hooks](https://reactjs.org/docs/hooks-intro.html)
+- [ ] [Error Boundaries](https://reactjs.org/docs/error-boundaries.html)
+- [ ] [Fragments](https://reactjs.org/docs/fragments.html)
+- [ ] [Optimizing Performance](https://reactjs.org/docs/optimizing-performance.html)
+- [ ] [Security](https://dev.to/vaibhavkhulbe/7-security-tips-for-your-react-application-4e78)
 
-  - Pseudo events can be used to react to user interaction with the real DOM and should trigger state changes.
+## **Extra Resources**
+- [ ] [Advanced React Patterns, Performance, Environment and Testing](https://www.youtube.com/watch?v=MfIoAG3e7p4&t=5s&ab_channel=codedamn)
 
-  - Only if it is absolutely necessary should references to the DOM be used to manipulate the DOM directly. Modifying state or properties only ensures that the changes made to the DOM by components are predictable and application logic is encapsulated.
+# **What is TypeScript?**
 
-- Calls to <component>.setState are asynchronous and batched;
+TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale. [Learn more](https://www.typescriptlang.org/)
 
-  - Do not call <component>.setState, and immediately expect to be able to do something with the results of the call.
+- [ ] [Why TS over JS](https://serokell.io/blog/why-typescript)
 
-  - The [setState(updater[, callback])](https://reactjs.org/docs/react-component.html#setstate) function accepts a second parameter, a callback which can be used to do something as soon as the state changes.
+# **React TypeScript Tutorial**
 
-- React lends itself to componentizing a website's fragments, so try to create components from code you often repeat.
+Do Lab 1 - 22
 
-  - In the same breath, try to give components as few responsibilities as possible.
+- [ ] [React Tutorial using TypeScript
+](https://handsonreact.com/docs/labs/react-tutorial-typescript)
 
-- If you need to make Ajax requests, do them in the componentDidMount lifecycle method.
+# **React Unit Testing**
 
-- Familiarise yourself with the [rich component API](https://reactjs.org/docs/react-component.html), there's probably a function that'll help you do what you want to do.
-
-</details>
-
-
+- [ ] [Testing](https://reactjs.org/docs/testing.html)
+- [ ] [Jest](https://jestjs.io/)
+  - [ ] [Tutorial](https://jestjs.io/docs/tutorial-react)
+- [ ] [Cypress](https://www.cypress.io/)
+  - [ ] [Tutorial](https://docs.cypress.io/guides/component-testing/react/quickstart)

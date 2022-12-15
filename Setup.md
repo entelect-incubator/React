@@ -20,11 +20,3 @@
     ```js
     npm start
     ```
-
-# Additonal
-
-  - [ ] Install [Yarn](https://classic.yarnpkg.com/en/) via npm
-    ```js
-    npm install --global yarn
-    ```
-
